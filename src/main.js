@@ -3,17 +3,16 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+// 全局样式
+import './assets/common.css'
+
 // 按需引入element-ui
-import { Button } from 'element-ui';
-
-Vue.use(Button)
-
+import './plugins/element.js'
 
 // 引入axois
 import axios from 'axios'
-
-Vue.prototype.axios = axios
-axios.defaults.baseURL = ''
+axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1'
+Vue.prototype.$axios = axios
 
 
 Vue.config.productionTip = false
