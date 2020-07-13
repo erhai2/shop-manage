@@ -46,7 +46,7 @@ export default {
       this.$refs.LoginFormRef.validate(async (valid) => {
         if(valid){
           let {data:res} = await this.$axios.post('/login',this.loginForm)
-          console.log(res)
+          // console.log(res)
           // 请求成功
           if(res.meta.status == 200){
             this.$message({
