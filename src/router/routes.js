@@ -24,8 +24,18 @@ const routes = [
           },
           {
             name:'Users',
-            path:'/users',
+            path:'users',
             component:()=> import('../components/user/Users.vue')
+          },
+          {
+            name:'Right',
+            path:'rights',
+            component:()=>import('../components/right/Rights.vue')
+          },
+          {
+            name:'Role',
+            path:'roles',
+            component:()=>import('../components/right/Roles.vue')
           }
         ]
     },

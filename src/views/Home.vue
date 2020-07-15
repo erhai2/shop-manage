@@ -43,7 +43,7 @@
                 <span>{{item.authName}}</span>
               </template>
               <el-menu-item 
-                :index="'/' + subItem.path" 
+                :index="subItem.path" 
                 v-for="subItem of item.children" 
                 :key="subItem.id"
               >

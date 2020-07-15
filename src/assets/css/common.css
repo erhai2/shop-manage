@@ -3,3 +3,7 @@ html,body,#app{
     padding: 0;
     height: 100%;
 }
+/* 屏幕缩小，样式不变形 */
+#app{
+    min-width: 1366px;
+}
